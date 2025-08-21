@@ -1,0 +1,130 @@
+/* General Reset and Box-Sizing */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Body and Page Layout */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #FFB6C1;
+    overflow: hidden;
+}
+
+/* Form Container (for animation) */
+.form-container {
+    display: flex;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    animation: slideIn 1s ease-out forwards; /* Slide in animation */
+}
+
+/* Left Side of the Form */
+.form-left {
+    padding: 2rem;
+    width: 50%;
+    background-color: #FFFFFF;
+    animation: fadeIn 1.5s ease-in forwards; /* Fade-in effect */
+}
+
+h2 {
+    margin-bottom: 1rem;
+    color: #444;
+    animation: fadeIn 1.5s ease-in forwards;
+}
+
+/* Right Side of the Form */
+.form-right {
+    padding: 2rem;
+    width: 50%;
+    background: url('../dist/DALL·E 2024-11-04 22.11.28 - Create a background image for a webpage themed in soft, calming colors including lavender, soft pink, light pastel greens, and a touch of blue. The de.webp');
+    background-size: cover;
+    color: rgb(32, 21, 21);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in forwards;
+}
+
+.form-right p {
+    font-size: 1.2rem;
+    animation: fadeIn 2s ease-in forwards;
+}
+
+/* Input Fields Styling */
+.form-control {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #FF69B4;
+    box-shadow: 0 0 5px rgba(255, 105, 180, 0.5);
+}
+
+/* Button Styling */
+.btn-primary {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #FF69B4;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #FF1493;
+    transform: scale(1.05); /* Slight grow on hover */
+}
+
+/* Form Links Styling */
+.form-link {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.form-link a {
+    color: #444;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.form-link a:hover {
+    color: #FF69B4;
+}
+
+/* Animations */
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
