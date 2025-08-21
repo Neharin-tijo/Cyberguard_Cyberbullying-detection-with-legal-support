@@ -8,7 +8,7 @@ from tensorflow.keras.models import model_from_json
 import re
 import openai
 
-openai.api_key = ""
+openai.api_key = "ADD_OPEN_API_KEY"
 
 # Load models and data
 model = load_model("C:\\Users\\Desktop\\OneDrive\\Desktop\\final project\\cyber_bullyingvi\\cyber_bullyingvi\\cyber_bullying\\BI LSTM\\models\\model.keras") 
