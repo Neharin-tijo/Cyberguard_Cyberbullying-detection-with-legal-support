@@ -11,8 +11,8 @@ import openai
 openai.api_key = "ADD_OPEN_API_KEY"
 
 # Load models and data
-model = load_model("C:\\Users\\Desktop\\OneDrive\\Desktop\\final project\\cyber_bullyingvi\\cyber_bullyingvi\\cyber_bullying\\BI LSTM\\models\\model.keras") 
-with open("C:\\Users\\Desktop\\OneDrive\\Desktop\\final project\\cyber_bullyingvi\\cyber_bullying\\BI LSTM\\models\\model.pkl", 'rb') as f:
+model = load_model("model.keras") 
+with open("model.pkl", 'rb') as f:
     loaded_pickle_data = pickle.load(f)
 
 model = model_from_json(loaded_pickle_data['model'])
